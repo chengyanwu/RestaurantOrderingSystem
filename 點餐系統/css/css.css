@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.BillboardImage{
+    width: 100vw;
+    height: 17vh;
+}
+
+.RestaurantStatusIcon_Dark{
+    color: rgb(61, 58, 58);
+}
+
+.RestaurantStatusIcon_Yellow{
+    color: #f1b51e;
+}
+
+.RestaurantStatusIcon_NoService{
+    text-align: center;
+}
+
+.RestaurantStatusIcon_OrderStatus{
+    text-align: center;
+}
