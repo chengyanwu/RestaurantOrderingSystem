@@ -1,0 +1,56 @@
+.restaurant-name{
+    padding: 15px 0px 5px 0px;
+}
+
+.restaurant-name h2{
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+
+.restaurant-status{
+    font-size: 0.9rem;
+}
+
+.restaurant-status p{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 20px;
+}
+
+.restaurant-status span{
+    padding: 0 0 5px 8px;
+}
+
+
+
+
+.BillboardImage{
+    width: 100%;
+    height: 170px;
+}
+
+.RestaurantStatusIcon_Dark{
+    color: rgb(61, 58, 58);
+}
+
+.RestaurantStatusIcon_Yellow{
+    color: #f1b51e;
+}
+
+.RestaurantStatusIcon_NoService{
+    text-align: center;
+}
+
+.RestaurantStatusIcon_OrderStatus{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
