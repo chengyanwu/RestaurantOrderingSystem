@@ -1,0 +1,53 @@
+
+.AnnouncementButton{
+    background: none;
+    border: 0;
+    font-size: 0.9rem;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 30px;
+}
+
+
+
+
+.Restaurant-Announcement{
+    padding: 10px 0px 0px 20px;
+}
+
+.Restaurant-Announcement p{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Restaurant-Announcement span{
+    font-size: 0.9rem;
+}
+
+.AnnouncementContent{
+    padding-left: 20px;
+    overflow: visible;
+    margin: 0;
+    position: relative;
+}
+.AnnouncementContent span{
+    padding: 8px;
+}
+
+.StickyBillboard{
+    display: block;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    background: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.StickyBillboard p{
+    padding: 15px 11px 15px 11px;
+}
