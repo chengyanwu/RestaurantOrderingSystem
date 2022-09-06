@@ -59,3 +59,121 @@ document.querySelectorAll('.AnnouncementButton').forEach(button => {
       }
   });
 });
+
+const container1 = document.getElementById('drinks1-container');
+const container2 = document.getElementById('drinks2-container');
+const container3 = document.getElementById('drinks3-container');
+
+const drinks1 = [{
+    image: '../img/image1.png',
+    title: '黑糖珍珠鮮奶',
+    content: '$85',
+  },
+  {
+    image: '../img/image2.png',
+    title: '黑糖仙草鮮奶',
+    content: '$85'
+  },
+  {
+    image: '../img/image-3.png',
+    title: '黑糖布丁鮮奶',
+    content: '$85'
+  },
+  {
+    image: '../img/image-3.png',
+    title: '黑糖椰果鲜奶',
+    content: '$85'
+  },
+  {
+    image: '../img/image-3.png',
+    title: '黑糖綠豆鲜奶',
+    content: '$85'
+  },
+  {
+    image: '../img/image-3.png',
+    title: '嶴赯鮮奶',
+    content: '$85'
+  },
+  {
+    image: '../img/image-3.png',
+    title: '鲜奶茶/線/膏',
+    content: '$85'
+  },
+  {
+    image: '../img/image-3.png',
+    title: '冬瓜鲜奶',
+    content: '$85'
+  },
+
+]
+
+const drinks2 = [{
+  image: '../img/image1.png',
+  title: '四季春青茶',
+  content: '$85',
+},
+{
+  image: '../img/image2.png',
+  title: '阿薩姆紅茶',
+  content: '$85'
+},
+{
+  image: '../img/image-3.png',
+  title: '茉莉綠茶',
+  content: '$85'
+},
+{
+  image: '../img/image-3.png',
+  title: '珍珠椰果四季青',
+  content: '$85'
+},
+{
+  image: '../img/image-3.png',
+  title: '珍珠 紅/青/綠',
+  content: '$85'
+},
+
+]
+
+const drinks3 = [{
+  image: '../img/image1.png',
+  title: '四季春青茶',
+  content: '$85',
+},
+{
+  image: '../img/image2.png',
+  title: '阿薩姆紅茶',
+  content: '$85'
+},
+{
+  image: '../img/image-3.png',
+  title: '茉莉綠茶',
+  content: '$85'
+},
+{
+  image: '../img/image-3.png',
+  title: '珍珠椰果四季青',
+  content: '$85'
+},
+{
+  image: '../img/image-3.png',
+  title: '珍珠 紅/青/綠',
+  content: '$85'
+},
+
+]
+
+function returnCards(drinks) {
+  return "<div class=\"products-cards\">" + drinks.map(drinks => `
+  <div>
+    <div class="product-content">
+      <h4>${drinks.title}</h4>
+      <p>${drinks.content}</p>
+    </div> 
+    <button class="info-button">+ info</button>
+  </div>`).join('') + "</div>";
+}
+
+container1.innerHTML = returnCards(drinks1);
+container2.innerHTML = returnCards(drinks2);
+container3.innerHTML = returnCards(drinks3);
