@@ -170,7 +170,7 @@ function returnCards(drinks) {
       <h4>${drinks.title}</h4>
       <p>${drinks.content}</p>
     </div> 
-    <button class="info-button">+ info</button>
+    <button class="info-button">Add to Cart  
   </div>`).join('') + "</div>";
 }
 
