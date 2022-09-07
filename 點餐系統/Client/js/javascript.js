@@ -1,3 +1,32 @@
+
+let dt = new Date();
+// time of first timespan
+// document.getElementById("datetime").innerHTML = dt.toLocaleString();
+document.getElementById("datetime").innerHTML = dt;
+
+// let tx;
+// function returnStoreStatus(){
+//   let d = new Date(); // current time
+//   let hours = d.getHours();
+//   let mins = d.getMinutes();
+//   let day = d.getDay();s
+
+//   if(hours >= 16  && hours <= 1){
+//     // document.getElementById("open-or-close").innerHTML = "打烊中 下午四點開始營業";
+//     tx = "打烊中 下午四點開始營業";
+//   }else{
+//     // document.getElementById("open-or-close").innerHTML = "營業中";
+//     tx = "營業中";
+//   }
+//   return tx;
+// }
+
+// var ele = document.getElementById("open-or-close");
+// ele.innerHTML = returnStoreStatus();
+
+
+// document.getElementById("open-or-close").innerHTML = tx;
+
 // AtickyBillboard
 function throttle(func, timeout = 250) {
     let last;
@@ -177,3 +206,24 @@ function returnCards(drinks) {
 container1.innerHTML = returnCards(drinks1);
 container2.innerHTML = returnCards(drinks2);
 container3.innerHTML = returnCards(drinks3);
+
+
+let tx;
+function returnStoreStatus(){
+  let d = new Date(); // current time
+  let hours = d.getHours();
+  let mins = d.getMinutes();
+  let day = d.getDay();
+
+  if(hours >= 16  && hours <= 1){
+    // document.getElementById("open-or-close").innerHTML = "打烊中 下午四點開始營業";
+    tx = "營業中";
+  }else{
+    // document.getElementById("open-or-close").innerHTML = "營業中";
+    tx = "打烊中 下午四點開始營業";
+  }
+  return tx;
+}
+
+var ele = document.getElementById("store-status");
+ele.innerHTML = returnStoreStatus();
