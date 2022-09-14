@@ -195,11 +195,14 @@ const drinks3 = [{
 function returnCards(drinks) {
   return "<div class=\"products-cards\">" + drinks.map(drinks => `
   <div>
-    <div class="product-content">
-      <h4>${drinks.title}</h4>
-      <p>${drinks.content}</p>
+    <div class="shop-item"> 
+      <h2 class="shop-item-title">${drinks.title} </h2>
+      <img class="shop-item-image" src="./statics/英姐.jpeg">
     </div> 
-    <button class="info-button">Add to Cart  
+    <div class="shop-item-details">
+        <span class="shop-item-price">${drinks.content}</span>
+        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+    </div> 
   </div>`).join('') + "</div>";
 }
 

@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="./css/restaurant.nav.css">
         <link rel="stylesheet" type="text/css" href="./css/restaurant.announcement.css">
         <link rel="stylesheet" type="text/css" href="./css/restaurant.foot.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
         
     </head>
     <body>
@@ -43,10 +44,7 @@
                                         h1.772c4.124,0,8.88,1.604,11.788,4.52c2.916,2.92,4.932,6.788,4.928,10.916l0.1,139.068
                                         C261.528,324.482,254.724,331.398,246.216,331.398z"/>
                                     </svg>
-    
-                                    <!-- <span>打烊中</span> -->
-                                    <!-- <span> 明天 06:00 開始營業</span> -->
-                                    <span> <p id="store-status"></p> </span>
+                                    <span id = "store-status" span>
 
 
                                 </p>
@@ -150,6 +148,22 @@
                     </section>
                 </main>
 
+                <section class="container content-section">
+                    <h2 class="section-header">CART</h2>
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">ITEM</span>
+                        <span class="cart-price cart-header cart-column">PRICE</span>
+                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                    </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                        <span class="cart-total-price">$0</span>
+                    </div>
+                    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                </section>
+
 
                 
 
@@ -178,6 +192,7 @@
             crossorigin="anonymous"></script>
     <script src="./js/javascript.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="./js/cart.js"></script>
 </html>
 
 
