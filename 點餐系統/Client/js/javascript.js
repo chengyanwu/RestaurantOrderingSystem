@@ -197,7 +197,6 @@ function returnCards(drinks) {
   <div>
     <div class="shop-item"> 
       <h2 class="shop-item-title">${drinks.title} </h2>
-      <img class="shop-item-image" src="./statics/英姐.jpeg">
     </div> 
     <div class="shop-item-details">
         <span class="shop-item-price">${drinks.content}</span>
