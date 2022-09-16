@@ -199,8 +199,8 @@ function returnCards(drinks) {
       <h2 class="shop-item-title">${drinks.title} </h2>
     </div> 
     <div class="shop-item-details">
-        <span class="shop-item-price">${drinks.content}</span>
-        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+        <span class="shop-item-price cart-column">${drinks.content}</span>
+        <button class="btn btn-primary shop-item-button"type="button">加入購物車</button>
     </div> 
   </div>`).join('') + "</div>";
 }

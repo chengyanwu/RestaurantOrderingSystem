@@ -175,10 +175,9 @@ html, body {
 
 .shop-item-title {
     display: block;
-    width: 100%;
     text-align: left;
     font-weight: normal;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #333;
     margin-bottom: 15px;
 }
@@ -213,7 +212,7 @@ html, body {
 .cart-column {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 0.5px  solid gray;
     margin-right: 1.5em;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -303,5 +302,6 @@ html, body {
 .btn-purchase {
     display: block;
     margin: 40px auto 80px auto;
+    padding: 10px 50px;
     font-size: 1.75em;
 }
