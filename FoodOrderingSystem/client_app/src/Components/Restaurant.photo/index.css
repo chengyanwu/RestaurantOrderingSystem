@@ -1,0 +1,15 @@
+.BillboardWrap{
+    font-size: 0;
+}
+
+.BillboardImage{
+    width: 100vw;
+    height: 170px;
+}
+
+@media screen and (min-width: 840px){
+    .BillboardImage{
+        width: 840px;
+    }
+}
+

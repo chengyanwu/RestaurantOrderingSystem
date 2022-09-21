@@ -23,7 +23,16 @@ p hr{
 
 
 /* app width */
-.app-wrap{
-    width: 100vw;
+
+
+@media (max-width: 840px) {
+    .app-wrap{
+            width: 100vw;
+        }
 }
 
+@media (min-width:841px){
+    .app-wrap{
+            width: 841px !important;
+        }
+}

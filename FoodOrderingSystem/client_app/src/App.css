@@ -1,0 +1,13 @@
+#App{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100vw;
+}
+
+@media screen and (min-width: 840px){
+  #App{
+    width: 840px;
+  }
+}
+
