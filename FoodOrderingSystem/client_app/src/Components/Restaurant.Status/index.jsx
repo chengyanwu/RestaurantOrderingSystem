@@ -12,10 +12,22 @@ import './index.css'
 }*/}
 
 export default class RestaurantStatus extends Component{
+    static propTypes = {
+        Restaurant_name:PropTypes.string.isRequired,
+        Restaurant_opentime:PropTypes.string.isRequired,
+        Restaurant_closetime:PropTypes.string.isRequired,
+    }
+
+    static defaultProps = {
+        Restaurant_name: '點餐系統',
+        Restaurant_opentime: '00:00',
+        Restaurant_closetime: '00:00'
+    }
 
 
     render(){
         const {Restaurant_name,Restaurant_opentime,Restaurant_closetime}=this.props
+
         return (<div>
                     <div className="restaurant-name">
                         <h2>{Restaurant_name}</h2>
@@ -44,11 +56,11 @@ export default class RestaurantStatus extends Component{
                         </p>
                         <p>
                             <svg
-                                style={{width:"20px", height:"20px",enableBackground:"new 0 0 45.352 45.352;"}}
+                                style={{width:"20px", height:"20px",enableBackground:"new 0 0 45.352 45.352"}}
                                 viewBox="0 0 45.352 45.352"
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="RestaurantStatusIcon_Dark RestaurantStatusIcon_OrderStatus"
-                                 x="0px" y="0px"
+                                x="0px" y="0px"
                                 fill="currentcolor">
                                 <path d="M32.459,0c-2.737,0-5.019,2.117-5.213,4.847l-1.396,19.492c-0.062,0.85,0.231,1.692,0.813,2.315
                                     c0.58,0.623,1.393,0.984,2.244,0.984h0.082L28.512,42.9c-0.021,0.653,0.225,1.268,0.68,1.735c0.454,0.47,1.079,0.715,1.732,0.715
