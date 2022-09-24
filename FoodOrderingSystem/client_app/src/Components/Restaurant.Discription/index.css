@@ -29,8 +29,15 @@
     margin: 0;
     position: relative;
 }
-.AnnouncementContent span{
-    padding: 8px;
+
+.webkit2{
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .StickyBillboard{
@@ -45,6 +52,10 @@
     font-weight: 500;
     transition: 0.2s;
 }
+
+
+
+
 
 .StickyBillboard p{
     padding: 15px 11px 15px 11px;
