@@ -6,7 +6,11 @@ import './index.css'
 export default class RestaurantDiscription extends Component{
     constructor(props){
         super(props)
-        this.state={btn_view:false}
+        this.state={
+            isShow:false,
+            isNeedShowMore:true
+        
+        }
         this.ChangeBtnState = this.ChangeBtnState.bind(this)
     }
 
@@ -15,26 +19,19 @@ export default class RestaurantDiscription extends Component{
     }
 
     static defaultProps = {
-        Announcement:'一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n',
+        Announcement:'一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n一些通知事項\n',
     }
 
     ChangeBtnState(){
-        const btn_view=this.state.btn_view
-        this.setState({btn_view:!btn_view})
-        console.log(btn_view)
-        
+        const isShow=this.state.isShow
+        this.setState({isShow:!isShow})
     }
-
-    ChangeAnnouncementHeight(){
-
-    }
-
 
     render(){
         const {Announcement}=this.props
         return (
-            <div className="Restaurant-Announcement">
-                <p>
+            <div className="Restaurant-Announcement-wrap">
+                <p className="Restaurant-Announcement">
                     <svg
                         style={{width:"20px", height:"20px"}}
                         viewBox="0 0 36 36"
@@ -46,26 +43,26 @@ export default class RestaurantDiscription extends Component{
                     </svg>
                     <span style={{paddingLeft:"8px"}}>提醒事項</span>
                     <button type="button" className='AnnouncementButton' onClick={this.ChangeBtnState}>
-                    {
-                            this.state.btn_view === true ?
-                            <svg id="AnnouncementButton-Downward-Icon"
-                                style={{width:"24px",height:"24px"}}
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"/>
-                            </svg>:
-                            <svg id="AnnouncementButton-Upward-Icon"
-                                style={{width:"24px",height:"24px"}}
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
+                        <svg style={{width:"24px",height:"24px"}}
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            {
+                                // bug here
+                                this.state.isShow === true ?
+                                <path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"/>:
                                 <path d="M17,13.41,12.71,9.17a1,1,0,0,0-1.42,0L7.05,13.41a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0L12,11.29l3.54,3.54a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29A1,1,0,0,0,17,13.41Z"/>
-                            </svg>
-                        }
+                            }
+                        </svg>
                     </button>
 
                 </p>
                 <div>
-                    <p className="AnnouncementContent webkit2">{Announcement}</p>
+                        {
+                            this.state.isShow === true ?
+                            <p className="AnnouncementContent webkit2">{Announcement}</p>:
+                            <p></p>
+                        }
+                    
                 </div>
             </div>)
     }

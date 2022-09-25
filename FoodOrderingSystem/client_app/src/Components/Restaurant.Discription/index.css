@@ -2,24 +2,31 @@
 .AnnouncementButton{
     background: none;
     border: 0;
-    font-size: 0.9rem;
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
-    padding-right: 30px;
+    cursor: pointer;
 }
 
-
-.Restaurant-Announcement{
-    padding: 10px 0px 0px 20px;
+.AnnouncementButton:focus,.AnnouncementButton:active{
+    background: none;
 }
 
-.Restaurant-Announcement p{
+.AnnouncementButton::selection,.AnnouncementButton::-moz-selection{
+    color: none;
+    background: 'red';
+}
+
+.Restaurant-Announcement-wrap{
+    padding: 10px 20px 0px 20px;
+}
+
+.Restaurant-Announcement-wrap p{
     display: flex;
     flex-wrap: nowrap;
 }
 
-.Restaurant-Announcement span{
+.Restaurant-Announcement-wrap span{
     font-size: 0.9rem;
 }
 
@@ -40,23 +47,3 @@
     word-break: break-all;
 }
 
-.StickyBillboard{
-    display: block;
-    width: 100%;
-    opacity: 0;
-    top: 0;
-    position: fixed;
-    z-index: 10;
-    background: #fff;
-    font-size: 1.5rem;
-    font-weight: 500;
-    transition: 0.2s;
-}
-
-
-
-
-
-.StickyBillboard p{
-    padding: 15px 11px 15px 11px;
-}
