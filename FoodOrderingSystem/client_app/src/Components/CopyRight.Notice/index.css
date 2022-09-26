@@ -1,0 +1,12 @@
+.foot{
+    background-color: rgb(183, 177, 177);
+    text-align: center;
+    height: 15vh;
+    line-height: 3rem;
+    padding-top: 15px;
+}
+
+.foot p{
+    margin: 0;
+    font-size: 0.9rem;
+}
