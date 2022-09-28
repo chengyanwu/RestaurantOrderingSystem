@@ -9,8 +9,6 @@ import RestaurantMenu from './Components/Restaurant.Menu';
 import CopyRightNotice from './Components/CopyRight.Notice';
 export default class App extends Component{
 
-  
-
   render(){
     
     return(
