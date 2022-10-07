@@ -11,12 +11,15 @@ export default class RestaurantMenuBar extends Component{
     }
     render(){
         const {Item_name,Item_prices} = this.props
-        return (<div>
-            
-            <div>
-                <h5>{Item_name}</h5><span>{Item_prices}</span>
-                <div className="slide-segmentation-thin"></div>
-            </div>
-        </div>)
+        return (
+            <div className='MenuBarWrap'>
+                <button className='MenuBar'>
+                    <div className='MenuBarContent'>
+                        <h5>{Item_name}</h5>
+                        <span>{Item_prices}</span>
+                    </div>
+                    <hr />
+                </button>
+            </div>)
     }
 }

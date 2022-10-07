@@ -12,15 +12,19 @@ export default class RestaurantMenuBlock extends Component{
     render(){
         const {MenuBlock_name,MenuBlock_item} = this.props
         var key = 1
-        return (<div>
-            <div>
+        return (
+        <div>
+            <h2>
                 {MenuBlock_name}
-            </div>
+            </h2>
             {
                 MenuBlock_item.map((Item_name) => (
                     <RestaurantMenuBar key={key++} {...Item_name}/>
                 ))
             }
+            <div>
+                <br />
+            </div>
         </div>)
     }
 }
